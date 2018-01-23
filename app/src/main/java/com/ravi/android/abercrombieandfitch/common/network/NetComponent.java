@@ -3,6 +3,7 @@ package com.ravi.android.abercrombieandfitch.common.network;
 import android.app.Application;
 import android.content.Context;
 
+import com.google.gson.Gson;
 import com.ravi.android.abercrombieandfitch.application.AppComponent;
 import com.ravi.android.abercrombieandfitch.common.network.endpoint.EndpointInterface;
 
@@ -21,6 +22,7 @@ public interface NetComponent {
     Retrofit retrofit();
     HttpLoggingInterceptor httpLoggingInterceptor();
     EndpointInterface endpointInterface();
+    Gson gson();
 
     Context context();
     Application application();

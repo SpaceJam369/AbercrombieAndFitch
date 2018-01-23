@@ -3,6 +3,7 @@ package com.ravi.android.abercrombieandfitch.common.network;
 
 import android.content.SharedPreferences;
 
+import com.google.gson.Gson;
 import com.ravi.android.abercrombieandfitch.common.network.endpoint.EndpointInterface;
 
 import java.util.Collections;
@@ -73,5 +74,11 @@ public class NetModule {
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.HEADERS);
         return httpLoggingInterceptor;
+    }
+
+    @Provides
+    @Singleton
+    Gson provideGson(){
+        return new Gson();
     }
 }
