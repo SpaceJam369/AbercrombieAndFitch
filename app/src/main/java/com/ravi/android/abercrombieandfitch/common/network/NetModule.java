@@ -3,8 +3,6 @@ package com.ravi.android.abercrombieandfitch.common.network;
 
 import android.content.SharedPreferences;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.ravi.android.abercrombieandfitch.common.network.endpoint.EndpointInterface;
 
 import java.util.Collections;
@@ -14,10 +12,8 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 import okhttp3.CertificatePinner;
-import okhttp3.CipherSuite;
 import okhttp3.ConnectionSpec;
 import okhttp3.OkHttpClient;
-import okhttp3.TlsVersion;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
